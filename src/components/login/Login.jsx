@@ -8,7 +8,9 @@ const initialState = {
 };
 
 export const validatePassword = (password) => {
-  // TODO
+  if(/^\d{6}$/g.test(password)) {
+    return true
+  }
   return false;
 };
 
